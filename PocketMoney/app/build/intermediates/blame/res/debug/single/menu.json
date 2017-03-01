@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\build\\intermediates\\res\\merged\\debug\\menu\\settings.xml",
+        "source": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\src\\main\\res\\menu\\settings.xml"
+    },
+    {
+        "merged": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_home_drawer.xml",
+        "source": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\src\\main\\res\\menu\\activity_home_drawer.xml"
+    },
+    {
+        "merged": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\build\\intermediates\\res\\merged\\debug\\menu\\colors_list.xml",
+        "source": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\src\\main\\res\\menu\\colors_list.xml"
+    },
+    {
+        "merged": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\build\\intermediates\\res\\merged\\debug\\menu\\home.xml",
+        "source": "Y:\\XUDIP\\BIT 7TH\\PROJECT\\PocketMoney\\app\\src\\main\\res\\menu\\home.xml"
+    }
+]

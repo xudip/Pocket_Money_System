@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:layout_height="fill_parent"
+    android:id="@+id/scollViewWholeScreen"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_expenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xudip.pocketmoney.AddExpenses">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMoneySpentOn"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spinnerMoneySpentOn"
+        android:layout_toStartOf="@+id/btnDeleteSelected"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Total Amount Spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerMoneySpentOn"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lblTotalAmountSpent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/lblTotalAmountSpent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtTotalAmount"
+        android:layout_alignParentEnd="true"
+        android:hint="Total Amount Spent"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/txtTotalAmount"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtCustomDescription"
+        android:layout_alignParentEnd="true"
+        android:hint="Custom Description of \nthe Transaction"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:text="Money Spent From:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCustomDescription"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lblMoneySpentFrom" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblMoneySpentFrom"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spinnerMoneySpentFrom" />
+
+    <Button
+        android:text="Add Expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddExpenses"
+        android:layout_below="@+id/spinnerMoneySpentFrom"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnDeleteSelected"
+        android:onClick="actionAddExpenses"
+        android:padding="5dp"
+        android:layout_alignEnd="@+id/ExpendableAccount" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnAddExpenses"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listOfTransactions"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorAccent"/>
+
+    <Button
+        android:text="Delete Selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDeleteSelected"
+        android:layout_alignBaseline="@+id/btnAddExpenses"
+        android:layout_alignBottom="@+id/btnAddExpenses"
+        android:layout_alignParentEnd="true"
+        android:onClick="actionDeleteSelected"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:text="Saving Account: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSavingAccount"/>
+
+    <TextView
+        android:text="Money Spent On:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMoneySpentOn"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/lblSavingAccount"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Expendable Account: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSavingAccount"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lblExpendableAccount" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/lblMoneySpentOn"
+        android:id="@+id/SavingAccount"
+        android:text="0" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblExpendableAccount"
+        android:layout_toEndOf="@+id/lblExpendableAccount"
+        android:id="@+id/ExpendableAccount" />
+
+
+</RelativeLayout>
+</ScrollView>

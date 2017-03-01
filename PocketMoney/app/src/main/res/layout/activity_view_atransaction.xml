@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_atransaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xudip.pocketmoney.ViewATransaction">
+
+    <TextView
+        android:text="time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDate"
+        android:layout_alignStart="@+id/lblDate"
+        android:id="@+id/lblTime"
+        android:textSize="18sp"
+        android:textStyle="normal|italic" />
+
+    <Button
+        android:text="Delete This Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Transaction Type:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/lblTransactionType"
+        android:layout_alignBottom="@+id/lblTransactionType"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Transaction Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTransactionType"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDate"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Total Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTotalAmount"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/lblSource"
+        android:layout_alignEnd="@+id/lblCategory"
+        android:layout_alignStart="@+id/lblCategory" />
+
+    <TextView
+        android:text="Custom Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCustomDescription"
+        android:textSize="18sp"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Money From:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/lblCategory"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/lblCategory"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Custom Description:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/lblCategory"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Total Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/lblCategory"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/lblTotalAmount"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="INCOME/EXPENSE ON: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblIncomeExpnese"
+        android:layout_below="@+id/lblTime"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSource"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/lblIncomeExpnese"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/lblTotalAmount" />
+
+    <TextView
+        android:text="Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCategory"
+        android:textSize="18sp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/lblTotalAmount"
+        android:layout_alignStart="@+id/btnDelete"
+        android:layout_alignEnd="@+id/lblTime" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnNext"
+        android:onClick="actionNext" />
+
+    <Button
+        android:text="Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnDelete"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnPrevious"
+        android:onClick="actionPrevious" />
+
+</RelativeLayout>

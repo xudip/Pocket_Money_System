@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/addIncome"
+            android:title="Add Income" />
+       <item
+           android:id="@+id/addExpense"
+            android:title="Add Expense" />
+        <item
+            android:id="@+id/viewAllTransactions"
+            android:title="@string/ViewAllTransaction"/>
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:title="Exit"/>
+        </menu>
+    </item>
+
+</menu>
